@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="relative">
+    <!-- Navigation bar start -->
+    <nav
+      class="fixed z-50 top-0 w-full bg-[rgba(0,0,0,0.5)] border-b-2 border-b-[rgba(255,255,255,0.06)] border-solid backdrop-blur-[10px]"
+    >
+      <div class="mx-auto max-w-7xl flex justify-between items-center px-5">
+        <div>
+          <img
+            class="h-20 w-auto"
+            src="assets/aristotle-logo.webp"
+            alt="aristotle-logo"
+          />
+        </div>
+        <!-- Hamburger icon for mobile -->
+        <button class="md:hidden block p-2" id="mobile-menu-toggle">
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="#fff"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <!-- Menu items container -->
+        <div class="hidden md:flex gap-8 items-center" id="menu-items">
+          <a href="#" class="text-white text-lg">Company</a>
+          <a href="#" class="text-white text-lg">Products</a>
+          <a href="#" class="text-white text-lg">Free Tools</a>
+          <button
+            class="px-6 py-2 bg-[#6a5c48] hover:bg-[#726552] rounded-full text-white"
+          >
+            Book a demo
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation bar end -->
+    <section class="absolute top-0 w-full bg-black pt-[82px]">
+      <div class="mx-auto max-w-7xl">
+        <div class="flex gap-4 lg:gap-[64px] pt-6 pb-12 px-5 lg:pl-16 lg:pt-16 lg:pb-12 flex-col-reverse lg:flex-row">
+          <div class="flex flex-col gap-12 lg:max-w-[520px] lg:h-[450px] justify-center">
+            <div class="flex flex-col gap-10">
+              <h1 class="text-white font-semibold text-[56px] leading-none text-center lg:text-left">
+                Keep in touch with your pipeline.
+              </h1>
+              <p class="text-white font-light text-[18px] leading-normal text-center lg:text-left">
+                Aristotle is a relationship-nurturing platform that helps small
+                teams monitor their leads’ online activity and trigger
+                personalized outreach at just the right time.
+              </p>
+            </div>
+            <div class="flex justify-center lg:justify-start">
+              <button
+                class="px-7 py-3 bg-[#6a5c48] hover:bg-[#726552] rounded-full text-white text-xl"
+              >
+                Book a demo
+              </button>
+            </div>
+          </div>
+          <div class="flex justify-center items-center w-full">
+            <img class="lg:max-h-[450px] max-h-[200px] w-auto" src="./assets/aristotle-blinks-only-size-optimized-pQVPzc.webp" alt="Aristotle" />
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-t-[58px]">
+        <div class="mx-auto max-w-7xl">
+          <div class="px-16 py-4 flex flex-col justify-center">
+            <h1 class="text-center font-semibold text-[24px]">Backed by</h1>
+            <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 pt-5">
+              <div class="flex items-center justify-center">
+                <img
+                  class="w-[160px] h-auto"
+                  src="./assets/hustlefund.svg"
+                  alt="hustlefund"
+                />
+              </div>
+              <div class="flex items-center justify-center">
+                <img
+                  class="w-[160px] h-auto"
+                  src="./assets/geek-ventures.svg"
+                  alt="hustlefund"
+                />
+              </div>
+              <div class="flex items-center justify-center">
+                <img
+                  class="w-[160px] h-auto"
+                  src="./assets/incisive-ventures.svg"
+                  alt="hustlefund"
+                />
+              </div>
+              <div class="flex items-center justify-center">
+                <img
+                  class="w-[160px] h-auto"
+                  src="./assets/unpopular-ventures.svg"
+                  alt="hustlefund"
+                />
+              </div>
+              <div class="flex items-center justify-center">
+                <img
+                  class="w-[160px] h-auto"
+                  src="./assets/pitbull-ventures.svg"
+                  alt="hustlefund"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
